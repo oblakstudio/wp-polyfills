@@ -20,6 +20,9 @@
     "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
   },
   "autoload": {
+    "psr-4": {
+      "Oblak\\WP\\": "src/"
+    },
     "files": [
       "src/oblak-polyfill-array.php",
       "src/oblak-polyfill-terms.php",
