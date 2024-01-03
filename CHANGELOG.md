@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/oblakstudio/wp-polyfills/compare/v1.0.0...v1.1.0) (2024-01-03)
+
+
+### Features
+
+* Added Singleton trait ([3be23e2](https://github.com/oblakstudio/wp-polyfills/commit/3be23e23786e97ec273103464c061414b92c5ef5))
+
 # 1.0.0 (2024-01-03)
 
 
