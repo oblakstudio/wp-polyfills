@@ -1,0 +1,36 @@
+{
+  "name": "oblak/wp-polyfills",
+  "description": "Various polyfills for WordPress.",
+  "authors": [
+    {
+      "name": "Sibin Grasic",
+      "email": "sibin.grasic@oblak.studio"
+    }
+  ],
+  "license": "GPL-2.0-only",
+  "version": "1.0.0",
+  "type": "library",
+  "require": {
+    "php": ">= 8.0"
+  },
+  "require-dev": {
+    "oblak/wordpress-coding-standard": "^1"
+  },
+  "suggest": {
+    "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
+  },
+  "autoload": {
+    "files": [
+      "src/oblak-polyfill-array.php",
+      "src/oblak-polyfill-terms.php"
+    ]
+  },
+  "config": {
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
