@@ -25,6 +25,7 @@
     },
     "files": [
       "src/oblak-polyfill-array.php",
+      "src/oblak-polyfill-conditionals.php",
       "src/oblak-polyfill-terms.php",
       "src/oblak-polyfill-wpfs.php"
     ]
