@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/oblakstudio/wp-polyfills/compare/v1.1.0...v1.2.0) (2024-01-13)
+
+
+### Features
+
+* Added request conditionals ([81b710d](https://github.com/oblakstudio/wp-polyfills/commit/81b710d9911f8fd11d9f13d38ecc4db5a6619fd3))
+
 # [1.1.0](https://github.com/oblakstudio/wp-polyfills/compare/v1.0.0...v1.1.0) (2024-01-03)
 
 
