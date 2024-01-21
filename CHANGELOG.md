@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/oblakstudio/wp-polyfills/compare/v1.2.0...v1.2.1) (2024-01-21)
+
+
+### Bug Fixes
+
+* Fixed term separator ([3485e41](https://github.com/oblakstudio/wp-polyfills/commit/3485e419443b97dcf68c3d4e96cf4e0cb481c424))
+
 # [1.2.0](https://github.com/oblakstudio/wp-polyfills/compare/v1.1.0...v1.2.0) (2024-01-13)
 
 
