@@ -26,7 +26,7 @@ if ( ! function_exists( 'wp_format_term_name' ) ) :
         bool $with_count = false,
         bool $with_link = false,
         string $link_base = '',
-        string $sep = ' &gt; '
+        string $sep = ' > '
 	) {
 		$formatted_name = '';
 		$formatter      = $with_link
