@@ -12,7 +12,7 @@ if ( ! function_exists( 'deregister_all_blocks' ) ) :
      * Deregisters all registered blocks.
      */
     function deregister_all_blocks() {
-        if ( did_action( 'init' ) || 'init' !== current_action() ) {
+        if ( did_action( 'init' ) && ! doing_action( 'init' ) ) {
             _doing_it_wrong( __FUNCTION__, 'You need to call this function on init', '1.0.0' );
             return;
         }
