@@ -11,18 +11,13 @@ namespace Oblak\WP\Traits;
 /**
  * Enables the singleton pattern.
  */
-trait Singleton_Trait {
+trait Singleton {
     /**
      * Class instance
      *
      * @var array<int, static>
      */
     protected static $instances = array();
-
-    /**
-     * Class Constructor
-     */
-    abstract protected function __construct();
 
     /**
      * Returns the singleton instance
@@ -40,22 +35,22 @@ trait Singleton_Trait {
      * @return string
      */
     private static function class_basename( $classname ) {
-        $classname = is_object( $classname ) ? get_class( $classname ) : $classname;
+        $classname = \is_object( $classname ) ? $classname::class : $classname;
 
-        return basename( str_replace( '\\', '/', $classname ) );
+        return \basename( \str_replace( '\\', '/', $classname ) );
     }
 
     /**
      * Disallow cloning
      */
     final public function __clone() {
-        _doing_it_wrong( __FUNCTION__, 'Cloning is disabled', 'WP Polyfills' );
+        \_doing_it_wrong( __FUNCTION__, 'Cloning is disabled', 'WP Polyfills' );
     }
 
     /**
      * Disallow serialization
      */
     final public function __wakeup() {
-        _doing_it_wrong( __FUNCTION__, 'Unserializing is disabled', 'WP Polyfills' );
+        \_doing_it_wrong( __FUNCTION__, 'Unserializing is disabled', 'WP Polyfills' );
     }
 }

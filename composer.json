@@ -7,13 +7,21 @@
       "email": "sibin.grasic@oblak.studio"
     }
   ],
+  "keywords": [
+    "wordpress",
+    "polyfill",
+    "compatibility",
+    "compat",
+    "shim",
+    "shims"
+  ],
   "license": "GPL-2.0-only",
-  "version": "1.2.0",
   "type": "library",
   "require": {
-    "php": ">= 8.0"
+    "php": ">= 8.0 < 8.2"
   },
   "require-dev": {
+    "ergebnis/composer-normalize": "^2.31",
     "oblak/wordpress-coding-standard": "^1"
   },
   "suggest": {
@@ -26,6 +34,7 @@
     "files": [
       "src/oblak-polyfill-array.php",
       "src/oblak-polyfill-conditionals.php",
+      "src/oblak-polyfill-filter.php",
       "src/oblak-polyfill-terms.php",
       "src/oblak-polyfill-wpfs.php"
     ]
@@ -35,7 +44,8 @@
     "optimize-autoloader": true,
     "sort-packages": true,
     "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true
     }
   }
 }

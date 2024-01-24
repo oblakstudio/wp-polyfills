@@ -26,27 +26,29 @@ if ( ! function_exists( 'wp_format_term_name' ) ) :
         bool $with_count = false,
         bool $with_link = false,
         string $link_base = '',
-        string $sep = ' > '
+        string $sep = ' > ',
 	) {
 		$formatted_name = '';
 		$formatter      = $with_link
-        ? fn( $term ) => sprintf(
+        ? static fn( $term ) => sprintf(
             '<a href="%s">%s</a>',
-            empty( $link_base )
+            '' === $link_base
                 ? get_term_link( $term->term_id, $tax )
                 : add_query_arg( $tax, $term->slug, $link_base ),
-            $term->name
+            $term->name,
         )
-        : fn( $term ) => $term->name;
+        : static fn( $term ) => $term->name;
 
 		if ( $term->parent ) {
 			$ancestors = array_reverse( get_ancestors( $term->term_id, $tax ) );
 			foreach ( $ancestors as $ancestor ) {
 				$ancestor_term = get_term( $ancestor, $tax );
 
-				if ( $ancestor_term ) {
-					$formatted_name .= $formatter( $ancestor_term ) . $sep;
-				}
+				if ( ! $ancestor_term ) {
+                    continue;
+                }
+
+                $formatted_name .= $formatter( $ancestor_term ) . $sep;
 			}
 		}
 
