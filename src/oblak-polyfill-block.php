@@ -17,10 +17,9 @@ if ( ! function_exists( 'deregister_all_blocks' ) ) :
             return;
         }
 
-        array_walk(
-            array_keys( WP_Block_Type_Registry::get_instance()->get_all_registered() ),
-            static fn( $b ) => WP_Block_Type_Registry::get_instance()->unregister( $b )
-        );
+        foreach ( array_keys( WP_Block_Type_Registry::get_instance()->get_all_registered() ) as $block ) {
+            WP_Block_Type_Registry::get_instance()->unregister( $block );
+        }
     }
 
 endif;
