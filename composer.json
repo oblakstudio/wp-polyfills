@@ -33,7 +33,6 @@
     },
     "files": [
       "src/oblak-polyfill-array.php",
-      "src/oblak-polyfill-block.php",
       "src/oblak-polyfill-conditionals.php",
       "src/oblak-polyfill-filter.php",
       "src/oblak-polyfill-terms.php",
