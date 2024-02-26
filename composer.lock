@@ -609,16 +609,16 @@
         },
         {
             "name": "oblak/wordpress-coding-standard",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oblakstudio/wordpress-coding-standards.git",
-                "reference": "6c08eb36ff1eeb9930b3d435f3a4847205ee190a"
+                "reference": "b1f62524c09c639a9fdf4272ad3fd113259a8952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oblakstudio/wordpress-coding-standards/zipball/6c08eb36ff1eeb9930b3d435f3a4847205ee190a",
-                "reference": "6c08eb36ff1eeb9930b3d435f3a4847205ee190a",
+                "url": "https://api.github.com/repos/oblakstudio/wordpress-coding-standards/zipball/b1f62524c09c639a9fdf4272ad3fd113259a8952",
+                "reference": "b1f62524c09c639a9fdf4272ad3fd113259a8952",
                 "shasum": ""
             },
             "require": {
@@ -657,9 +657,9 @@
             ],
             "support": {
                 "issues": "https://github.com/oblakstudio/wordpress-coding-standards/issues",
-                "source": "https://github.com/oblakstudio/wordpress-coding-standards/tree/v1.1.0"
+                "source": "https://github.com/oblakstudio/wordpress-coding-standards/tree/v1.1.1"
             },
-            "time": "2024-01-23T22:12:32+00:00"
+            "time": "2024-01-24T23:43:48+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -973,16 +973,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.25.0",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "bd84b629c8de41aa2ae82c067c955e06f1b00240"
+                "reference": "231e3186624c03d7e7c890ec662b81e6b0405227"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/bd84b629c8de41aa2ae82c067c955e06f1b00240",
-                "reference": "bd84b629c8de41aa2ae82c067c955e06f1b00240",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/231e3186624c03d7e7c890ec662b81e6b0405227",
+                "reference": "231e3186624c03d7e7c890ec662b81e6b0405227",
                 "shasum": ""
             },
             "require": {
@@ -1014,9 +1014,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.25.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.26.0"
             },
-            "time": "2024-01-04T17:06:16+00:00"
+            "time": "2024-02-23T16:05:55+00:00"
         },
         {
             "name": "slevomat/coding-standard",
